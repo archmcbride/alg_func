@@ -80,40 +80,65 @@
 
 // "The quick brown fox" -> "Hetay uickqay rownbay oxfay".
 
-// (source: https://adriann.github.io/programming_problems.html)
+// // (source: https://adriann.github.io/programming_problems.html)
 
-var engToPigLatin = "The quick brown fox"
-//lowercase
-var lowerCase = (engToPigLatin.toLowerCase())
-    //console.log(lowerCase)  
-//split array into a string    
-var str = lowerCase.split(" ")
-    //console.log(str)
+// var engToPigLatin = "The quick brown fox"
+// //lowercase
+// var lowerCase = (engToPigLatin.toLowerCase())
+//     //console.log(lowerCase)  
+// //split array into a string    
+// var str = lowerCase.split(" ")
+//     //console.log(str)
 
-    //MAKE LOOP: move first letter to end of word, add 'ay' to each word
-//move first letter to end of word
-var resultArr = function (){
-	var resultArr = [];
-	var input;
-	var firstLetter;
-	var endOfWord;
-	var result;
+//     //MAKE LOOP: move first letter to end of word, add 'ay' to each word
+// //move first letter to end of word
+// var resultArr = function (){
+//     	var resultArr = [];
+//     	var input;
+//     	var firstLetter;
+//     	var endOfWord;
+//     	var result;
 
-	for (var i = 0; i < str.length; i++) {
-		
-		input = str[i];
-		firstLetter = input.slice(0,1);
-		endOfWord = input.slice(1);
-		//console.log(firstLetter)
-		//console.log(endOfWord)
-		result = (endOfWord + firstLetter + "ay");	
-		//console.log(result)
-		resultArr.push(result)
-	}
-	var finalResults = resultArr.join(" ");
- 	console.log(finalResults)
-}
- resultArr(engToPigLatin)
+//     	for (var i = 0; i < str.length; i++) {
+    		
+//     		input = str[i];
+//     		firstLetter = input.slice(0,1);
+//     		endOfWord = input.slice(1);
+//     		//console.log(firstLetter)
+//     		//console.log(endOfWord)
+//     		result = (endOfWord + firstLetter + "ay");	
+//     		//console.log(result)
+//     		resultArr.push(result)
+//     	}
+//     	var finalResults = resultArr.join(" ");
+//      	//console.log(finalResults)
+// }
+//  resultArr(engToPigLatin)
+//English into Piglatin results
+var pigToEnglish = "hetay uickqay rownbay oxfay"
+//console.log(pigToEnglish)
+//split into individual words
+var x = pigToEnglish.split(" ")
+//console.log(x)
+
+
+    var resultAr2 =[];
+
+    for (var i = 0; i < x.length; i++) {
+
+        var first = x[i].slice(-3, x[i].length - 2)
+        //console.log(first)
+        var next = x[i].slice(x[i][0],-3)
+        var result = (first + next)
+        resultAr2.push(result)
+    }  
+    var final = resultAr2.join(" ");
+    console.log(final)
+
+    
+
+
+
  
 	
 
