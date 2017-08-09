@@ -63,17 +63,23 @@
     // }
     // console.log(firstMissingInt(testArray))
 
-//PROBLEM #4 Write a function which takes an array of integers and returns an array with any duplicate integers removed.
+// PROBLEM #4 Write a function which takes an array of integers and returns an array with any duplicate integers removed.
 // [1,1,2,3,1,2,3] -> [1,2,3]
 // [1,4,4,4,2,2,4,4,4] -> [1,4,2]
 
 
-// var arr = [1,4,4,4,2,2,4,4,4]
-
-// var newArr= new Set(arr);
+// var numbers = [1,4,4,4,2,2,4,4,4]
 
 
-// console.log(newArr)
+// var final = function(arr){
+//     newArr = []
+//     for (var i = 0; i < arr.length; i++) {
+//         if (!newArr.includes(arr[i])) {
+//             newArr.push(arr[i])
+//         }
+//     }return newArr 
+// }
+// console.log(final(numbers))
 
 // //PROBLEM #5   Write function that translates a text to Pig Latin, and another that translates back. 
 // English is translated to Pig Latin by taking the first letter of every word, moving it to the end of the word and adding "ay".
@@ -115,53 +121,53 @@
 // }
 //  resultArr(engToPigLatin)
 //English into Piglatin results
-var pigToEnglish = "hetay uickqay rownbay oxfay"
-//console.log(pigToEnglish)
-//split into individual words
-var x = pigToEnglish.split(" ")
+// var pigToEnglish = "hetay uickqay rownbay oxfay"
+// //console.log(pigToEnglish)
+// //split into individual words
+// var x = pigToEnglish.split(" ")
 //console.log(x)
 
 
-    var resultAr2 =[];
+    // var resultAr2 =[];
 
-    for (var i = 0; i < x.length; i++) {
+    // for (var i = 0; i < x.length; i++) {
 
-        var first = x[i].slice(-3, x[i].length - 2)
-        //console.log(first)
-        var next = x[i].slice(x[i][0],-3)
-        var result = (first + next)
-        resultAr2.push(result)
-    }  
-    var final = resultAr2.join(" ");
-    console.log(final)
-
-    
+    //     var first = x[i].slice(-3, x[i].length - 2)
+    //     //console.log(first)
+    //     var next = x[i].slice(x[i][0],-3)
+    //     var result = (first + next)
+    //     resultAr2.push(result)
+    // }  
+    // var final = resultAr2.join(" ");
+    // console.log(final)
 
 
-
+// var text= "hetay uickqay rownbay oxfay"
+// //console.log(pigToEnglish)
+// //split into individual words
  
-	
+// var endResult = function(pigToEnglish){
+//     var resultAr2 = [];
+//     var first;
+//     var next;
+//     var result;
+//     var final;
 
+//     var x = pigToEnglish.split(" ")
+//         console.log(x)  
+//     for (var i = 0; i < x.length; i++) {
 
+//         first = x[i].slice(-3, x[i].length - 2)
+//         console.log(first)
+//         next = x[i].slice(x[i][0],-3)
+//         result = (first + next)
+//         resultAr2.push(result)
+//     }  
+//     final = resultAr2.join(" ");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// return final
+// }
+// console.log(endResult(text))
 
 
 // PROBLEM #7 Write a function which takes in an array of numbers and a max cutoff value, 
@@ -177,6 +183,8 @@ var x = pigToEnglish.split(" ")
 //     return array
 // }
 // console.log(maxCutoff([1,5,7,3,1,5,7], 3));
+
+
 
 // //PROBLEM #8 Write a function which takes no input and returns an array of 10 distinct randomly generated integers between 1 and 100.
 
@@ -205,27 +213,30 @@ var x = pigToEnglish.split(" ")
 // [], [] -> []
 // [], [-2, 2] -> [-2, -1, 0, 1, 2]
 
-// (Source: https://adriann.github.io/programming_problems.html)
+// // (Source: https://adriann.github.io/programming_problems.html)
 
-    // var arr1 = [1,2,5,6,9];
-    // var arr2 = [3,4,5,10];
+//     var a = [1,2,5,6,9];
+//     var b = [3,4,5,10];
 
-    // var arr3 = arr1.concat(arr2);
-    // console.log(arr3)
+// var sorting = function (arr1,arr2){
+//     var arr3 = arr1.concat(arr2);
+//     console.log(arr3)
 
-    // arr3.sort(function(numberA, numberB) {
-    //     if(numberA>numberB) {
-    //         return 1
-    //         }
-    //     else if (numberA<numberB) {
-    //                 return -1
-    //             }
-    //     else if (numberA===numberB) {
-    //                 return 0
-    //             }
+//     arr3.sort(function(numberA, numberB) {
+//         if(numberA>numberB) {
+//             return 1
+//             }
+//         else if (numberA<numberB) {
+//                     return -1
+//                 }
+//         else if (numberA===numberB) {
+//                     return 0
+//                 }
+//         })
+//     return arr3
+// }
 
-    // })
-    // console.log(arr3)
+//     console.log(sorting(a,b))
 
 
 
